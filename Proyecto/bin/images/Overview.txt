@@ -1,0 +1,132 @@
+/*  atributos generales para personajes
+            hp: int - abstract
+            pocision: double[2] //x,y
+            velocidad: double
+            ataque: boolean
+            colicion: boolean
+            
+        
+        MEGAMAN
+        atributos:
+            pocision: double[2]
+            hp: int
+            ataque: boolean //balas
+            velocidad: double
+            colicion: boolean
+            
+            
+            vidas: int
+            salto: boolean
+            super_move: boolean
+            item: boolean
+            score: int
+            
+            
+        TROOPER
+        atributos:
+            pocision: double[2]
+            hp: int
+            ataque: boolean //esfera de electricidad
+            velocidad: double
+            colicion: boolean
+            
+            
+            existencia_megaman: boolean
+            puntos: int // vale 10
+        
+        
+        FAROS
+        atributos:
+            pocision: double[2]
+            //a este personaje no le afecta la gravedad
+            hp: int
+            ataque: boolean //balas
+            velocidad: double
+            colicion: boolean
+            
+            existencia_megaman: boolean
+            puntos: int // vale 30
+            
+        MAGNUM
+        atributos:
+            pocision: double[2]
+            hp: int
+            colicion: boolean
+            ataque: boolean
+            colicion: boolean
+    * /
+    
+    
+    /**atributos para considerad
+     * 
+     * PARA LA CALSE PRINCIPAL
+     *  
+     * atributos generales
+     *      1.- gravedad
+     * 
+     * algunas cosas que podemos agregar o cambiar podrian ser:
+     *      1.- cajas para destruir
+     *          1.1.- dentro de algunas encontrar como bonos
+     *              1.1.1.- vidas
+     *              1.1.2.- bono de puntos
+     *              1.1.3.- poderes
+     *      2.- rediseñar el mapa (tentativo)
+     *              2.1.- plataformas moviles
+     *              2.2.- items random
+     *              2.3.- etc
+     * 
+     * 
+     * PARA LOS PERSONAJES
+     * 
+     * atributos que se comparten:
+     *      1.- HitPoints (HP)
+     *      2.- Speed
+     *  
+     * atributos para el personaje principal (Typhoon)
+     *      1.- salto
+     *      2.- disparar
+     *      3.- existencia de items (todos estos pueden ser boolean para validar su existencia)
+     *          3.1.- Super habilidad 
+     *          3.2.- Jetpack
+     *          3.3.- Bono de puntos
+     *          3.4.- Alguna habilidad que modifique los ataques basicos del personaje, opciones tentativas
+     *              3.4.1.- Disparo de fuego (daño sobre tiempo)
+     *              3.4.2.- Disparo aturdidor (inmobiliza al blanco)
+     *              3.4.3.- Disparo de hielo (alentiza al blanco)
+     *      4.- vidas
+     *          4.1.- obtienes una vida nueva en cuanto llegas a los 100 puntos
+     *              4.1.1.- en cuanto se obtiene una vida, el puntaje se reinicia
+     *      5.- sistema de puntaje
+     * 
+     * atributos de los trooper
+     *      1.- cercania al jugador (puede ser booleana)
+     *          1.1.- dispara descarga (area de efecto circular)
+     *      2.- tiene un valor en puntos de 10
+     * 
+     * atributos de faros
+     *      1.- no le afectara la gravedad
+     *          1.1.- movimento libre en todos los ejes
+     *      2.- puede perseguir al personaje si este entra dentro de un área
+     *      3.- disparo a distancia (se puede usar el mismo codigo que para el dispara basico del personaje principal (Typhoon)
+     *      4.- tiene un valor en puntos de 30
+     * 
+     * atributos de Magnum (Finnal boss)
+     *      1.- MUCHA VIDA
+     *          1.1.- MUCHA
+     *              1.1.1.- DEMASIADA, le debe de llevar tiempo a la persona el matarlo
+     *      2.- los ataques de el deben de ser fuertes
+     *      3.- debe ser dificil de esquivar
+     *      4.- se encuentra practicamente inmobil
+     *          4.1.- aunque puede saltar
+     *              4.1.1.- poco, pero puede
+     *      5.- tenemos que hacer los calculos para que con tres impactos muera el jugador
+     *      6.- tiene un valor en puntos de 100 (una vida)
+     * 
+     * 
+     * NOTA TENTATIVA:
+     *      podemos hacer mini jefes para cada nivel
+     * 
+     * 
+     * NOTA TENTATIVA:
+     *      EN CUANTO SE TERMINA EL JUEGO VALDRIA LA PENA EL PREGUNTARLE AL JUGADOR SI DESEA REPETIR MANTENIENDO SUS ATRIBUTOS PARA EL PUNTO EN EL QUE GANA
+     */
