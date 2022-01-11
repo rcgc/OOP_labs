@@ -1,2 +1,2 @@
 # OOP_labs
-Object Oriented Porgramming homeworks
+Object Oriented Programming homeworks
